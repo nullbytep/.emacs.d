@@ -1,0 +1,17 @@
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+.Cask
+eshell
+el-get
+
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+.DS_Store
+
+elpa
+ac-comphist.dat
