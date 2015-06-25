@@ -15,4 +15,9 @@
 (el-get-bundle color-theme-zenburn)
 
 ;; Emacs iPython Notebook
-(el-get-bundle ein)
+(el-get-bundle ein
+  :type github
+  :pkgname "millejoh/emacs-ipython-notebook"
+  :features ein
+  :depends (websocket request auto-complete))
+
