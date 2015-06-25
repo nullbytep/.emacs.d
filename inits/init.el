@@ -14,14 +14,5 @@
 ;; load packages managed by el-get
 (load-file (locate-user-emacs-file "el-get-bundles.el"))
 
-;; other configurations
-;; load all ~/.emacs.d/configurations/*el files
-(mapc 'load-file
-      (remove-if '(lambda (filename)
-                    ;; ignore this file (init.el)
-                    (or (string-match load-file-name filename)
-                        (string-match "\\([#~]\\)" filename)))
-                 (directory-files (locate-user-emacs-file "configurations")
-                                  t "\\.el$")))
-
-
+(require 'init-loader)
+(init-loader-load)

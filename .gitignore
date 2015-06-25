@@ -4,7 +4,9 @@
 .Cask
 eshell
 el-get
-
+elpa
+ac-comphist.dat
+request
 /.emacs.desktop
 /.emacs.desktop.lock
 *.elc
@@ -13,5 +15,3 @@ tramp
 .\#*
 .DS_Store
 
-elpa
-ac-comphist.dat
