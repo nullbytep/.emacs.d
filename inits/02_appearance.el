@@ -1,6 +1,7 @@
 ;; show line and column number
 (line-number-mode t)
 (column-number-mode t)
+(global-linum-mode t)
 
 ;; default screen size / frame split
 (when window-system (set-frame-size (selected-frame) 170 45))

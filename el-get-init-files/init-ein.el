@@ -1,3 +1,5 @@
+(require 'ein)
+
 (eval-after-load 'ein-notebook
   '(progn
      (define-key ein:notebook-mode-map (kbd "M-n")
