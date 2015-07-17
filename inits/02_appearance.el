@@ -11,7 +11,7 @@
 (when (fboundp 'tool-bar-mode) (tool-bar-mode 0))
 (when (fboundp 'menu-bar-mode) (menu-bar-mode 0))
 
-;; use Cyberpunk theme
+;; select theme
 (setq my-theme 'zenburn)
 (if (member my-theme (custom-available-themes))
     (load-theme my-theme t)

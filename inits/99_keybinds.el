@@ -18,3 +18,5 @@
 
 ;; indent buffer
 (global-set-key (kbd "C-x <backtab>") 'indent-buffer)
+
+(global-set-key (kbd "C-#") 'comment-or-uncomment-region)

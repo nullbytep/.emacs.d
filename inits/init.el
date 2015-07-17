@@ -27,4 +27,3 @@ This is particularly useful under Mac OSX, where GUI apps are not started from a
 
 (require 'init-loader)
 (init-loader-load)
-

@@ -48,3 +48,12 @@
 
 ;; python-mode
 (setq python-indent-offset 4)
+
+;; JVM
+
+;; load JAVA_HOME from shell environment
+(let ((java-home-from-shell (replace-regexp-in-string 
+                        "[ \t\n]*$" ""
+                        (shell-command-to-string
+                         "$SHELL --login -i -c 'echo $JAVA_HOME'"))))
+  (setenv "JAVA_HOME" java-home-from-shell))
