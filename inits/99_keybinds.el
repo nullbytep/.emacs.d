@@ -20,3 +20,9 @@
 (global-set-key (kbd "C-x <backtab>") 'indent-buffer)
 
 (global-set-key (kbd "C-#") 'comment-or-uncomment-region)
+
+
+;; yasnippet
+;;トリガーキーをTABからSPCに変更
+(define-key yas-minor-mode-map (kbd "SPC") nil)
+(define-key yas-minor-mode-map (kbd "TAB") nil)

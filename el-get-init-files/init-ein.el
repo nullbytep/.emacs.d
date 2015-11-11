@@ -9,7 +9,7 @@
      (define-key ein:notebook-mode-map (kbd "C-c C-n")
        'ein:worksheet-next-input-history)
      (define-key ein:notebook-mode-map (kbd "C-c C-p")
-       'ein:worksheet-prev-input-history))) 
+       'ein:worksheet-previous-input-history)))
 
 ;;
 (add-hook 'python-mode-hook (lambda () (if (buffer-file-name)
