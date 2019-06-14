@@ -4,6 +4,7 @@
 
 (el-get-bundle init-loader)
 
+
 ;; -------------------------------------
 ;; Common Editing
 ;; -------------------------------------
@@ -13,6 +14,8 @@
 (el-get-bundle yasnippet-snippets)
 (el-get-bundle helm)
 (el-get-bundle htmlize)
+(el-get-bundle windows)
+
 
 ;; -------------------------------------
 ;; Themes
@@ -26,7 +29,7 @@
 ;; -------------------------------------
 
 ;; Common
-;; (el-get-bundle flycheck)
+(el-get-bundle flycheck)
 (el-get-bundle magit)
 
 ;; Python
@@ -40,3 +43,23 @@
 
 (el-get-bundle scala-mode2)
 (el-get-bundle ensime)
+
+(el-get-bundle yaml-mode)
+
+(el-get-bundle company-mode)
+(el-get-bundle company-jedi)
+
+;; ------------------------------------
+;; UI
+;; ------------------------------------
+
+(el-get-bundle neotree)
+(el-get-bundle all-the-icons)  ;; required by neotree
+(el-get-bundle minimap)
+(el-get-bundle rainbow-delimiters)
+(el-get-bundle beacon)
+
+;; ------------------------------------
+;; Other
+;; ------------------------------------
+(el-get-bundle projectile)

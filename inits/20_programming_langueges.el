@@ -10,7 +10,7 @@
 ;; Read in PATH from .bash_profile
 ;; (if (not (getenv "TERM_PROGRAM"))
 ;;    (setenv "PATH"
-;;	    (shell-command-to-string "source $HOME/.bash_profile && printf $PATH")))
+;;      (shell-command-to-string "source $HOME/.bash_profile && printf $PATH")))
 
 ;; (add-hook 'clojure-mode-hook 'paredit-mode)
 
