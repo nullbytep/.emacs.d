@@ -25,7 +25,7 @@
 ;; create backup file in ~/.emacs.d/backup
 (setq make-backup-files t)
 (setq backup-directory-alist
-      '((".*" . (expand-file-name "~/.emacs.d/backup"))))
+      '(("~/.emacs.d/backup/")))
 
 ;; create auto-save file in ~/.emacs.d/backup
 (setq auto-save-file-name-transforms
@@ -59,7 +59,7 @@
 
 (define-key global-map win:switch-prefix nil)
 (mapc
- '#(lambda (n) (define-key global-map (concat "\C-z" n) 'win-switch-to-window))
+ '(lambda (n) (define-key global-map (concat "\C-z" n) 'win-switch-to-window))
  '("1" "2" "3" "4" "5" "6" "7" "8" "9"))
 (define-key global-map "\C-z\C-l" 'win-resume-local)
 (define-key global-map "\C-z\C-n" 'win-next-window)
@@ -73,4 +73,3 @@
 (define-key global-map "\C-z=" 'win-switch-menu)
 (define-key global-map "\C-zn" 'win-next-window)
 (define-key global-map "\C-zp" 'win-prev-window)
-

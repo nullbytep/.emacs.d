@@ -2,13 +2,16 @@
 (helm-mode 1)
 ;; (helm-autoresize-mode 1)
 
-(defun my-helm-mini ()
+(helm-projectile-on)
+
+(defun my-helm-find-files ()
   (interactive)
-;;  (require 'helm-files)
-  (helm :sources '(helm-source-recentf
-                   helm-source-find-files)
-        :input "/Users/Satoshi"
-        :buffer "*helm find files and recenf*"))
+  (helm :sources '(helm-source-buffers-list
+                 helm-source-projectile-files-list
+                 helm-source-occur
+                 helm-source-recentf
+                 helm-source-locate)
+        :buffer "*my-helm-find-files*"))
 
 (setq helm-recentf-fuzzy-match t
       helm-buffers-fuzzy-matching t

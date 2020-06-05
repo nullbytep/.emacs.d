@@ -36,10 +36,12 @@
 (el-get-bundle python-mode)
 (el-get-bundle jedi)
 (el-get-bundle ein)   ;; Emacs iPython Notebook
+(el-get-bundle rst-mode)
 
 ;; others
 (el-get-bundle julia-mode)
 (el-get-bundle web-mode)
+(el-get-bundle rjsx-mode)
 
 (el-get-bundle scala-mode2)
 (el-get-bundle ensime)
@@ -63,3 +65,4 @@
 ;; Other
 ;; ------------------------------------
 (el-get-bundle projectile)
+(el-get-bundle helm-projectile)

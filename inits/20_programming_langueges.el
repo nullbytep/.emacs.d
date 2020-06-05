@@ -34,6 +34,10 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 
+(require 'rjsx-mode)
+(add-to-list 'auto-mode-alist '("\\.jsx?\\'" . rjsx-mode))
+
+
 (defun my-web-mode-hook ()
   "Hooks for Web mode."
   (setq web-mode-markup-indent-offset 2)
@@ -52,7 +56,7 @@
 ;; JVM
 
 ;; load JAVA_HOME from shell environment
-(let ((java-home-from-shell (replace-regexp-in-string 
+(let ((java-home-from-shell (replace-regexp-in-string
                         "[ \t\n]*$" ""
                         (shell-command-to-string
                          "$SHELL --login -i -c 'echo $JAVA_HOME'"))))

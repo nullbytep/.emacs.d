@@ -52,3 +52,5 @@
 (setq whitespace-action '(auto-cleanup))
 (set-face-background 'whitespace-empty "#4a4a4a")
 (set-face-background 'whitespace-trailing "#4c4c4c")
+
+(global-whitespace-mode 1)

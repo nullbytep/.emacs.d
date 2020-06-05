@@ -15,9 +15,9 @@
 (global-set-key [(control >)] 'shrink-window-horizontally)
 
 ;; use regex as default in search / replace
-(global-set-key [(control s)] 'isearch-forward-regexp) 
+(global-set-key [(control s)] 'isearch-forward-regexp)
 (global-set-key [(control meta s)] 'isearch-forward)
-(global-set-key [(control r)] 'isearch-backward-regexp) 
+(global-set-key [(control r)] 'isearch-backward-regexp)
 (global-set-key [(control meta r)] 'isearch-backward)
 (global-set-key [(meta %)] 'query-replace-regexp)
 (global-set-key [(control meta %)] 'query-replace)
@@ -38,12 +38,12 @@
 ;;トリガーキーをTABからSPCに変更
 (define-key yas-minor-mode-map (kbd "SPC") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
-
+(global-set-key (kbd "<backtab>") 'yas/expand)
 
 ;; Helm key binds --------------------------------------------------------------
 
 ;; finding files
-(global-set-key (kbd "C-x f") 'helm-for-files)
+(global-set-key (kbd "C-x f") 'my-helm-find-files)
 (global-set-key (kbd "C-x F") 'set-fill-column)  ;; move from C-x f
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
